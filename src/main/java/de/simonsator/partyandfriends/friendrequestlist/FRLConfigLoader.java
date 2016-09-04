@@ -1,6 +1,5 @@
 package de.simonsator.partyandfriends.friendrequestlist;
 
-import de.simonsator.partyandfriends.utilities.ConfigLoader;
 import de.simonsator.partyandfriends.utilities.ConfigurationCreator;
 
 import java.io.File;
@@ -24,6 +23,7 @@ public class FRLConfigLoader extends ConfigurationCreator {
 		set("Priority", 100);
 		set("Messages.Help", "&8/&5friend listrequests &8- &7Lists your friend requests");
 		set("Messages.NoFriendRequests", " &7Until now you did not receive any friend requests");
+		set("Messages.Output", " &7You &7have &7friend &7requests &7from: [FRIENDREQUESTS]");
 	}
 
 	@Override
