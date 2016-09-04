@@ -1,0 +1,16 @@
+
+Friend-Request-List.iml
+
+*.class
+
+target/maven-archiver/pom.properties
+
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+
+*.jar
+
+target/classes/plugin.yml
