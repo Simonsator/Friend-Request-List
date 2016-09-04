@@ -10,7 +10,7 @@ import java.io.File;
  * @version 1.0.0 on 03.09.16.
  */
 public class FRL extends Plugin {
-	private FRLConfigLoader config = new FRLConfigLoader(new File(Main.getInstance().getDataFolder(), "config.yml"));
+	private FRLConfigLoader config;
 	private static FRL instance;
 
 	@Override

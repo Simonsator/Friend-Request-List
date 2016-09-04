@@ -18,10 +18,10 @@ public class FRLConfigLoader extends ConfigurationCreator {
 	}
 
 	private void loadDefaultValues() {
-		set("Names", "requestlist", "friendrequestlist");
+		set("Names", "requestlist", "listrequests", "friendrequestlist");
 		set("Priority", 100);
 		set("Messages.Help", "&7Lists your friend requests");
-		set("Messages.NoFriends", "&7You don't have added friends till now");
+		set("Messages.NoFriends", "&8/&5friend listrequests &8- &7List your friend requests");
 	}
 
 	@Override
