@@ -34,7 +34,7 @@ public class FRLCommand extends FriendSubCommand {
 					+ getInstance().getMessagesYml().getString("Friends.General.RequestInfoOnJoinColorComma")
 					+ getInstance().getMessagesYml().getString("Friends.Command.List.PlayerSplit");
 		content = content.substring(0, content.length() - (getInstance().getMessagesYml().getString("Friends.Command.List.PlayerSplit").length()));
-		pPlayer.sendMessage(PatterCollection.FRIEND_REQUEST_COUNT_PATTERN.matcher(PatterCollection.FRIEND_REQUEST_PATTERN.matcher(getInstance()
+		pPlayer.sendMessage(PatterCollection.FRIEND_REQUEST_COUNT_PATTERN.matcher(PatterCollection.FRIEND_REQUEST_PATTERN.matcher(getInstance().getFriendsPrefix() + getInstance()
 				.getMessagesYml().getString("Friends.General.RequestInfoOnJoin")).replaceAll(Matcher.quoteReplacement(content))).
 				replaceAll(Matcher.quoteReplacement(friendRequests.size() + "")));
 	}
