@@ -11,9 +11,11 @@ import java.io.IOException;
  * @version 1.0.0 on 03.09.16.
  */
 public class FRLConfigLoader extends ConfigurationCreator {
-	protected FRLConfigLoader(File file) {
+	protected FRLConfigLoader(File file) throws IOException {
 		super(file);
+		readFile();
 		loadDefaultValues();
+		saveFile();
 		process(getCreatedConfiguration());
 	}
 
