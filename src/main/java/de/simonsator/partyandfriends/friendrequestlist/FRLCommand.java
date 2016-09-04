@@ -25,7 +25,7 @@ public class FRLCommand extends FriendSubCommand {
 		List<PAFPlayer> friendRequests = pPlayer.getRequests();
 		if (friendRequests.isEmpty()) {
 			pPlayer.sendMessage(getInstance().getFriendsPrefix() +
-					FRL.getInstance().getConfig().getCreatedConfiguration().getString("Messages.NoFriends"));
+					FRL.getInstance().getConfig().getCreatedConfiguration().getString("Messages.NoFriendRequests"));
 			return;
 		}
 		for (PAFPlayer player : friendRequests)
