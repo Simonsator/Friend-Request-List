@@ -36,7 +36,7 @@
         <dependency>
             <groupId>de.simonsator</groupId>
             <artifactId>Party-and-Friends-For-Bungeecord-MySQL</artifactId>
-            <version>1.0.76</version>
+            <version>1.0.81</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
