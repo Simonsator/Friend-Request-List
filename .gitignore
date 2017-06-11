@@ -16,3 +16,5 @@ target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 target/classes/plugin.yml
 
 .DS_Store
+/target/
+/.idea/

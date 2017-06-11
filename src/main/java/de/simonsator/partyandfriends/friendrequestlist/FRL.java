@@ -1,7 +1,7 @@
 package de.simonsator.partyandfriends.friendrequestlist;
 
-import de.simonsator.partyandfriends.main.Main;
-import net.md_5.bungee.api.plugin.Plugin;
+import de.simonsator.partyandfriends.api.PAFExtension;
+import de.simonsator.partyandfriends.friends.commands.Friends;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import java.io.IOException;
  * @author Simonsator
  * @version 1.0.0 on 03.09.16.
  */
-public class FRL extends Plugin {
+public class FRL extends PAFExtension {
 	private FRLConfigLoader config;
 	private static FRL instance;
 
@@ -18,11 +18,11 @@ public class FRL extends Plugin {
 	public void onEnable() {
 		instance = this;
 		try {
-			config = new FRLConfigLoader(new File(getDataFolder(), "config.yml"));
+			config = new FRLConfigLoader(new File(getConfigFolder(), "config.yml"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		Main.getInstance().getFriendsCommand().addCommand(
+		Friends.getInstance().addCommand(
 				new FRLCommand(config.getCreatedConfiguration().getStringList("Names").toArray(new String[0]),
 						config.getCreatedConfiguration().getInt("Priority"), config.getCreatedConfiguration().getString("Messages.Help")));
 	}
@@ -33,5 +33,11 @@ public class FRL extends Plugin {
 
 	public static FRL getInstance() {
 		return instance;
+	}
+
+	@Override
+	public void reload() {
+		onDisable();
+		onEnable();
 	}
 }
