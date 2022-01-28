@@ -6,13 +6,9 @@ import de.simonsator.partyandfriends.utilities.ConfigurationCreator;
 import java.io.File;
 import java.io.IOException;
 
-/**
- * @author Simonsator
- * @version 1.0.0 on 03.09.16.
- */
 public class FRLConfigLoader extends ConfigurationCreator {
 	protected FRLConfigLoader(File file, PAFExtension pPlugin) throws IOException {
-		super(file, pPlugin);
+		super(file, pPlugin, true);
 		readFile();
 		loadDefaultValues();
 		saveFile();

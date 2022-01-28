@@ -37,7 +37,7 @@ public class FRLCommand extends FriendSubCommand {
 			content.append(Main.getInstance().getMessages().getString("Friends.Command.List.PlayerSplit"));
 		}
 		pPlayer.sendMessage(PatterCollection.FRIEND_REQUEST_COUNT_PATTERN.matcher(PatterCollection.FRIEND_REQUEST_PATTERN.matcher(Friends.getInstance().getPrefix() + Main.getInstance()
-				.getMessages().getString("Friends.General.RequestInfoOnJoin")).replaceAll(Matcher.quoteReplacement(content.substring(0, content.length() - PLAYER_SPLIT_LENGTH)))).
-				replaceAll(Matcher.quoteReplacement(friendRequests.size() + "")));
+						.getMessages().getString("Friends.General.RequestInfoOnJoin")).replaceAll(Matcher.quoteReplacement(content.substring(0, content.length() - PLAYER_SPLIT_LENGTH)))).
+				replaceAll(Matcher.quoteReplacement(Integer.toString(friendRequests.size()))));
 	}
 }
