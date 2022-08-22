@@ -3,6 +3,6 @@ version: ${project.version}
 author: Simonsator
 depends: [ PartyAndFriends ]
 depend: [ PartyAndFriends ]
-main: de.simonsator.partyandfriends.friendrequestlist.FRL
+main: de.simonsator.partyandfriends.friendrequestlist.bungee.FRL
 description: An add-on for party and friends extended to add a list all friend requests
 api-version: 1.13
