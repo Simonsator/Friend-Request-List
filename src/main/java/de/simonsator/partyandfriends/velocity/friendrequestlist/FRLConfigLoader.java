@@ -1,4 +1,4 @@
-package de.simonsator.partyandfriends.friendrequestlist;
+package de.simonsator.partyandfriends.velocity.friendrequestlist;
 
 import de.simonsator.partyandfriends.api.PAFExtension;
 import de.simonsator.partyandfriends.utilities.ConfigurationCreator;
