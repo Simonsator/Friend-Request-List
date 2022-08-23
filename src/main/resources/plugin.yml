@@ -4,5 +4,5 @@ author: Simonsator
 depends: [ PartyAndFriends ]
 depend: [ PartyAndFriends ]
 main: de.simonsator.partyandfriends.friendrequestlist.FRL
-description: An add-on for party and friends extended to add a list all friend requests
+description: An add-on for Party and Friends to add a list all friend requests
 api-version: 1.13
