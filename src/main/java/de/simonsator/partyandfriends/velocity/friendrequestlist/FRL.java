@@ -1,15 +1,21 @@
 package de.simonsator.partyandfriends.velocity.friendrequestlist;
 
-import de.simonsator.partyandfriends.api.PAFExtension;
-import de.simonsator.partyandfriends.friends.commands.Friends;
-import de.simonsator.partyandfriends.utilities.ConfigurationCreator;
+
+import de.simonsator.partyandfriends.velocity.api.PAFExtension;
+import de.simonsator.partyandfriends.velocity.friends.commands.Friends;
+import de.simonsator.partyandfriends.velocity.utilities.ConfigurationCreator;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
 
 public class FRL extends PAFExtension {
 	private static FRL instance;
 	private ConfigurationCreator config;
+
+	public FRL(Path folder) {
+		super(folder);
+	}
 
 	public static FRL getInstance() {
 		return instance;
@@ -27,6 +33,11 @@ public class FRL extends PAFExtension {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+
+	@Override
+	public String getName() {
+		return "Friend-Request-List";
 	}
 
 	public ConfigurationCreator getConfig() {

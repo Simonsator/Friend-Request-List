@@ -6,7 +6,7 @@
 
 	<groupId>de.simonsator</groupId>
 	<artifactId>Friend-Request-List-Velocity</artifactId>
-	<version>1.0.3-RELEASE</version>
+	<version>1.0.4-RELEASE</version>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -31,8 +31,8 @@
 	</build>
 	<repositories>
 		<repository>
-			<id>bungeecord-repo</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>papermc</id>
+			<url>https://repo.papermc.io/repository/maven-public/</url>
 		</repository>
 		<repository>
 			<id>simonsators-repo</id>

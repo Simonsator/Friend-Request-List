@@ -1,11 +1,12 @@
 package de.simonsator.partyandfriends.velocity.friendrequestlist;
 
-import de.simonsator.partyandfriends.api.friends.abstractcommands.FriendSubCommand;
-import de.simonsator.partyandfriends.api.pafplayers.OnlinePAFPlayer;
-import de.simonsator.partyandfriends.api.pafplayers.PAFPlayer;
-import de.simonsator.partyandfriends.friends.commands.Friends;
-import de.simonsator.partyandfriends.main.Main;
-import de.simonsator.partyandfriends.utilities.PatterCollection;
+
+import de.simonsator.partyandfriends.velocity.api.friends.abstractcommands.FriendSubCommand;
+import de.simonsator.partyandfriends.velocity.api.pafplayers.OnlinePAFPlayer;
+import de.simonsator.partyandfriends.velocity.api.pafplayers.PAFPlayer;
+import de.simonsator.partyandfriends.velocity.friends.commands.Friends;
+import de.simonsator.partyandfriends.velocity.main.Main;
+import de.simonsator.partyandfriends.velocity.utilities.PatterCollection;
 
 import java.util.List;
 import java.util.regex.Matcher;
